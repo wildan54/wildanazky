@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styleregis.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <script src="js/script.js"></script>
+    <title>Registrasi</title>
+</head>
+<body style="">
+    <div class="container flex-col">
+        <div class="header flex-row" style="background:none">
+            <div class="logo flex-row">
+                <div class="flex-col center">
+                    <img src="Asset/Logo.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="content flex-row">
+            <div class="flex-col center" style="height: 600px; margin-left: 2rem; margin-top: 2rem; gap: 1rem;">
+                <h1>Mari Kita Mulai Perubahan !!!</h1>
+                <h2 style="margin-bottom: 2rem;">Jadilah Agen Perubahan untuk Lingkunganmu</h2>
+                <div class="flex-row" style="align-content: flex-start;gap: 0rem;">
+                        <img src="Asset/illust.png" alt="">
+                </div>
+                <h1 id="save">#Save our Earth</h1>
+            </div>
+            <div class="frame">
+                <div class="profil flex-col">
+                    <h3><span style="text-decoration: underline; text-decoration-color: #FDB741;">Re</span>gistrasi</h3>
+                    <div class="flex-row">
+                        <div class="flex-col" >
+                            <form action="" name="registrasi" onsubmit="return(validateRegis());" style="display:flex; flex-direction: column; align-items:  flex-end">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <div class="form-group">
+                                            <label for="name">Nama Lengkap</label>
+                                            <input type="text" class="form-control" id="name" placeholder="">
+                                        </div></td>
+                                        <td>
+                                            <div class="form-group">
+                                            <label for="username">Username</label>
+                                            <input type="text" class="form-control" id="username" placeholder="">
+                                        </div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-group">
+                                            <label for="email">Email</label>
+                                            <input type="email" class="form-control" id="email" placeholder="">
+                                        </div></td>
+                                        <td>
+                                            <div class="form-group">
+                                            <label for="no">No. Telepon</label>
+                                            <input type="text" class="form-control" id="no" placeholder="">
+                                        </div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-group">
+                                            <label for="password">Password</label>
+                                            <input type="password" class="form-control" id="password" placeholder="">
+                                        </div></td>
+                                        <td>
+                                            <div class="form-group">
+                                            <label for="ppassword">Konfirmasi Password</label>
+                                            <input type="password" class="form-control" id="ppassword" placeholder="">
+                                        </div></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan='2'>
+                                            <label for="jk">Jenis Kelamin</label>
+                                            <div class="flex-row">
+                                                <div class="radioo flex-row">
+                                                    <input class="radio" type="radio" id="male" name="gender" value="male">
+                                                    <label for="male">Male</label><br>
+                                                </div>
+                                                <div class="radioo flex-row">
+                                                    <input class="radio" type="radio" id="female" name="gender" value="female">
+                                                    <label for="female">Female</label><br>
+                                                </div>
+                                                <div class="radioo flex-row">
+                                                    <input class="radio" type="radio" id="other" name="gender" value="other">
+                                                    <label for="other">Lainnya</label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <button type="submit" formaction="profil.html" style="margin-right: 2rem;">Daftar</button>
+                            </form>
+                            <a href="login.html">Sudah memiliki akun ? <span style="font-weight:700; text-decoration: underline;">Login</span></a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

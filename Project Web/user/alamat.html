@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+    <title>Alamat</title>
+  </head>
+  <body>
+    <!-- Awal Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top" style="background-color: #a9db8a">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/Logo.svg" alt="" width="35" height="35" class="d-inline-block align-text-top" />
+          EcoTrash
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="custom1">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#AboutUs">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Shop">Shop</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Layanan </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #a9db8a">
+                <li><a class="dropdown-item" href="#" style="color: white">Pick Up</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#" style="color: white">Drop Point</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" style="color: white" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              <img class="img-fluid" src="img/profil.svg" class="rounded d-block ms-1" alt="..." />
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #a9db8a">
+              <li><a class="dropdown-item" href="profil.html" style="color: white">Profil</a></li>
+              <li><a class="dropdown-item" href="../index.html" style="color: white">Logout</a></li>
+            </ul>
+          </div>
+          <!-- <a class="d-flex nav-link dropdown-toggle text-decoration-none ms-2" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="img/profil.svg" class="rounded d-block ms-1" alt="...">
+                <span class="btn mt-1" style="font-size: 20px; color: white; font-weight: 700;">example</span>
+              </a> -->
+        </div>
+      </div>
+    </nav>
+    <!-- Akahir Navbar -->
+    <div class="container flex-col">
+      <!-- <div class="header flex-row">
+        <div class="logo flex-row">
+          <div class="flex-col center">
+            <img src="Asset/Logo.svg" alt="" />
+          </div>
+        </div>
+        <div class="nav flex-row" style="font-size: 24px">
+          <h2><a href="index-login.html">Home</a></h2>
+          <h2><a href="">About Us</a></h2>
+          <h2><a href="">Shop</a></h2>
+          <h2><a href="">Layanan</a></h2>
+        </div>
+        <div class="akun flex-row">
+          <div class="flex-col center">
+            <img src="Asset/person3.png" alt="" />
+          </div>
+          <div class="profil">
+            <h2 style="font-size: 20px; color: white; font-weight: 700"><a href="profil.html">Hi, Zion</a></h2>
+          </div>
+        </div>
+      </div> -->
+      <div class="content flex-row mt-5" style="padding-top: 50px">
+        <div class="navleft flex-col">
+          <div class="frame" style="margin-bottom: 1rem">
+            <div class="koin flex-row">
+              <div class="flex-col center">
+                <img src="Asset/person4.png" alt="" />
+              </div>
+              <div class="kointext flex-col">
+                <p>Zion</p>
+                <h4>Gold</h4>
+              </div>
+            </div>
+          </div>
+          <div class="menu flex-row" onclick="location.href='profil.html'">
+            <div class="flex-col center">
+              <img src="Asset/person.png" alt="" />
+            </div>
+            <h4>Profil</h4>
+          </div>
+          <div class="menu flex-row" onclick="location.href='addalamat.html'">
+            <div class="flex-col center">
+              <img src="Asset/city2.png" alt="" />
+            </div>
+            <h4>Alamat</h4>
+          </div>
+          <div class="menu flex-row" onclick="location.href='#'">
+            <div class="flex-col center">
+              <img src="Asset/history.png" alt="" />
+            </div>
+            <h4>History</h4>
+          </div>
+        </div>
+        <div class="frame1">
+          <div class="profil flex-col">
+            <h3>Alamat Saya</h3>
+            <div class="hor-line"></div>
+            <div class="flex-row me-1">
+              <div class="flex-col" style="align-items: center">
+                <div class="alamat" style="padding: 10px">
+                  <span style="font-weight: 700; font-size: 24px; margin: auto">Example</span>
+                  <p style="margin-bottom: auto">081991780891 Jalan Anggrek</p>
+                  <p>Jalan Anggrek No. 130 Block A10</p>
+                </div>
+                <a class="addalamat" href="addalamat.html" style="text-decoration: none; color: white; background-color: #a9db8a">Tambah</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+    <!-- <link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" /> -->
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>Pick up</title>
+  </head>
+
+  <body>
+    <div class="container flex-col">
+      <!-- <div class="header flex-row">
+        <div class="logo flex-row">
+          <div class="flex-col center">
+            <img src="Asset/Logo.svg" alt="" />
+          </div>
+          <h1></h1>
+        </div>
+        <div class="nav flex-row">
+          <h2><a href="">Beranda</a></h2>
+          <h2><a href="">Tentang Kami</a></h2>
+          <h2><a href="">Store</a></h2>
+          <div class="dropdown" onmouseover="hover()" onmouseout="unhover()">
+            <h2>
+              <a href="" id="dropdown-text"
+                >Layanan
+                <svg width="15" height="12" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path id="dropdown-icon" d="M0 0L7.5 8L15 0" fill="white" />
+                </svg>
+              </a>
+            </h2>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+        </div>
+        <div class="akun flex-row" onclick="akun_dropdown()">
+          <div class="flex-row col-cen">
+            <img src="Asset/person3.png" alt="" />
+            <div>
+              <img src="Asset/dropdown.png" alt="" />
+            </div>
+          </div>
+          <h2 class="akun-toggle">Hi, Zion</h2>
+          <div id="akun-dropdown" class="dropdown-content" style="margin-top: 4rem">
+            <a href="#">Setting</a>
+            <a href="#">Logout</a>
+          </div>
+        </div>
+      </div> -->
+      <div class="content flex-row">
+        <div class="frame">
+          <div class="profil flex-col">
+            <h3>Pick Up</h3>
+            <div class="hor-line"></div>
+            <div class="flex-row">
+              <div class="flex-col">
+                <form action="" name="pickup" onsubmit="return(validatePickup());" style="display: flex; flex-direction: column; align-items: flex-end">
+                  <table>
+                    <tr>
+                      <td>
+                        <div class="form-group select">
+                          <label for="sampah">Jenis Sampah*</label>
+                          <select class="form-control" id="sampah" name="sampah">
+                            <option disabled selected value>-- pilih jenis sampah --</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td rowspan="5" style="vertical-align: top">
+                        <div class="form-group">
+                          <label for="file">Foto Sampah</label>
+                          <div class="flex-row">
+                            <img class="flex-col" height="fit-content" id="image" src="Asset/defaultimg.png" alt="your image" />
+                            <img class="flex-col" id="image2" src="" alt="" />
+                            <img class="flex-col" id="image3" src="" alt="" />
+                          </div>
+                          <input style="padding-top: 8px" type="file" class="form-control" id="file" placeholder="" onchange="readURL(this);" multiple />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-group">
+                          <label for="alamat">Alamat*</label>
+                          <textarea name="alamat" id="alamat" cols="30" rows="4"></textarea>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-group">
+                          <label for="waktu">Tanggal Penjemputan*</label>
+                          <input type="date" class="form-control" id="waktu" placeholder="" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-group">
+                          <label for="informasi">Informasi Tambahan</label>
+                          <textarea name="informasi" id="informasi" cols="30" rows="4"></textarea>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                  <button type="submit" style="margin-right: 2rem">Simpan</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

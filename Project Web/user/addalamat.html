@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/styleAlamat.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+    <script src="Js/script.js"></script>
+    <title>Alamat</title>
+  </head>
+  <body>
+    <!-- <div class="header flex-row">
+        <div class="logo flex-row">
+          <div class="flex-col center">
+            <img src="Asset/Logo.svg" alt="" />
+          </div>
+        </div>
+        <div class="nav flex-row">
+          <h2><a href="indexlog.html">Beranda</a></h2>
+          <h2><a href="">Layanan</a></h2>
+          <h2><a href="">Shop</a></h2>
+          <h2><a href="">Riwayat</a></h2>
+        </div>
+        <div class="akun flex-row">
+          <div class="flex-col center">
+            <img src="Asset/person3.png" alt="" />
+          </div>
+          <div class="profil">
+            <h2><a href="profil.html">Hi, Zion</a></h2>
+          </div>
+        </div>
+      </div> -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top" style="background-color: #a9db8a">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/Logo.svg" alt="" width="35" height="35" class="d-inline-block align-text-top" />
+          EcoTrash
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="custom1">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#AboutUs">Tentang Kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Shop">Store</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Layanan </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #a9db8a">
+                <li><a class="dropdown-item" href="#" style="color: white">Pick Up</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#" style="color: white">Drop Point</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" style="color: white" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              <img class="img-fluid" src="img/profil.svg" class="rounded d-block ms-1" alt="..." />
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #a9db8a">
+              <li><a class="dropdown-item" href="profil.html" style="color: white">Profil</a></li>
+              <li><a class="dropdown-item" href="../index.html" style="color: white">Logout</a></li>
+            </ul>
+          </div>
+          <!-- <a class="d-flex nav-link dropdown-toggle text-decoration-none ms-2" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="img/profil.svg" class="rounded d-block ms-1" alt="...">
+              <span class="btn mt-1" style="font-size: 20px; color: white; font-weight: 700;">example</span>
+            </a> -->
+        </div>
+      </div>
+    </nav>
+
+    <div class="content flex-row mt-5" style="padding-top: 50px">
+      <div class="navleft flex-col">
+        <div class="frame" style="margin-bottom: 1rem">
+          <div class="koin flex-row">
+            <div class="flex-col center">
+              <img src="Asset/person4.png" alt="" />
+            </div>
+            <div class="kointext flex-col">
+              <p>Zion</p>
+              <h4>Gold</h4>
+            </div>
+          </div>
+        </div>
+        <div class="menu flex-row" onclick="location.href='profil.html'">
+          <div class="flex-col center">
+            <img src="Asset/person.png" alt="" />
+          </div>
+          <h4>Profil</h4>
+        </div>
+        <div class="menu flex-row" onclick="location.href='alamat.html'">
+          <div class="flex-col center">
+            <img src="Asset/city2.png" alt="" />
+          </div>
+          <h4>Alamat</h4>
+        </div>
+        <div class="menu flex-row" onclick="location.href='#'">
+          <div class="flex-col center">
+            <img src="Asset/history.png" alt="" />
+          </div>
+          <h4>History</h4>
+        </div>
+      </div>
+      <div class="frame1">
+        <div class="profil flex-col">
+          <h3>Tambah Alamat</h3>
+          <div class="hor-line"></div>
+          <div class="flex-row me-1">
+            <div class="flex-col">
+              <form action="" name="alamat" onsubmit="return(validateForm());" style="display: flex; flex-direction: column; align-items: flex-end">
+                <table>
+                  <tr>
+                    <td>
+                      <div class="form-group">
+                        <label for="name">Nama Kamu</label>
+                        <input type="text" class="form-control" id="name" placeholder="" />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <label for="no">Nomor</label>
+                        <input type="text" class="form-control" id="no" placeholder="" />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="form-group">
+                        <label for="provinsi">Provinsi</label>
+                        <input type="text" class="form-control" id="provinsi" placeholder="" />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <label for="kota">Kota</label>
+                        <input type="text" class="form-control" id="kota" placeholder="" />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="form-group">
+                        <label for="kecamatan">Kecamatan</label>
+                        <input type="text" class="form-control" id="kecamatan" placeholder="" />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <label for="kodepos">Kode Pos</label>
+                        <input type="text" class="form-control" id="kodepos" placeholder="" />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      <div class="form-group">
+                        <label for="alamat">Alamat</label>
+                        <textarea name="alamat" id="alamat" cols="30" rows="10"></textarea>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+                <button type="submit" formaction="alamat.html" style="margin-right: 2rem">Simpan</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  </body>
+</html>
